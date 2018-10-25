@@ -1,0 +1,14 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: "Open Sans", sans-serif;
+  background: $color-bg;
+  color: #444;
+  overflow-x: hidden;
+}
+
+.container{
+  max-width:1340px;
+  margin: 0 auto;
+}

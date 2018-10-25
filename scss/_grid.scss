@@ -1,0 +1,38 @@
+$gap: 10px; //odstep miedzy kolumnami
+$bp: 980px; // od kiedy maja sie ukladac obok siebie
+$columns: 12; //liczba kolumn
+
+.container {
+  padding-left: $gap;
+  padding-right: $gap;
+
+  .row {
+
+    margin-left: -$gap;
+    margin-right: -$gap;
+
+    [class*="col-"] {
+      padding-left: $gap;
+      padding-right: $gap;
+      box-sizing: border-box;
+      margin-bottom: 2*$gap;
+
+    }
+
+    @media(min-width: $bp) {
+
+      display: flex;
+
+      @for $i from 1 through $columns {
+
+        .col-#{$i}-#{$columns} {
+          width: (100 / $columns * $i) * 1%;
+          //padding-left:20px;
+          //padding-right:20px;
+          //box-sizing: border-box;
+        }
+
+      }
+    }
+  }
+}

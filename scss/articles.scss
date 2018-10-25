@@ -1,0 +1,28 @@
+.article-list{
+  padding-top:60px;
+}
+.article{
+  font-size:20px;
+}
+.article-photo{}
+.article-photo img{
+  width:100%;
+  height:auto;
+  border-radius: 6px 6px 0 0;
+}
+.article-title{
+  margin: 65px 40px 10px;
+  font-size: 30px;
+  font-weight: 800;
+}
+.article-subtitle{
+  margin: 0 40px;
+  font-weight: 400;
+  margin-bottom:40px;
+}
+.article-text{
+  color:#888;
+  margin: 0 40px;
+  line-height:2em;
+  padding-bottom:40px;
+}

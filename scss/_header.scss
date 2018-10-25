@@ -1,0 +1,87 @@
+.page-header{}
+.page-header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+.page-logo{
+  width:145px;
+  height:70px;
+  display:flex;
+  background: $color-logo;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oleo Script",sans-serif;
+  color:#fff;
+  text-decoration: none;
+  font-size: 50px;
+
+
+}
+
+.page-nav{}
+.page-nav-list{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.page-nav-list li{
+  margin-left:40px;
+
+}
+.page-nav-list a{
+  font-weight: bold;
+  text-decoration: none;
+  color:#444;
+  padding:10px 15px;
+  display:block;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.page-nav-list a:hover{
+  background: #fff;
+}
+.page-nav-list li.active a {
+  background: #444;
+  color: #fff;
+}
+.page-nav-toggle{
+  width:60px;
+  height:40px;
+  border:0;
+  background: rgba(#000,0.2);
+  border-radius:6px;
+  position:fixed;
+  top:15px;
+  left:15px;
+  cursor:pointer;
+  display:none;
+  z-index:100;
+}
+.page-nav-toggle strong{
+  position: absolute;
+  left:-9999px;
+}
+.page-nav-toggle span{
+  width:15px;
+  height:4px;
+  background: #fff;
+  display:block;
+  margin:2px auto;
+
+}
+@media(max-width:980px){
+  .page-nav-list{
+    display:none;
+  }
+  .page-header .container{
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .page-nav-toggle{
+    display:block;
+  }
+}
